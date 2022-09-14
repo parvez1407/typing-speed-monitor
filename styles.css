@@ -142,17 +142,17 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    text-align:center;
+    align-items:center;
+    grid-gap:1rem;
 }
 
 .card {
   width: 100%;
   height: 100%;
   padding: 50px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -185,6 +185,11 @@ button {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .card {
     flex-direction: column;
